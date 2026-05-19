@@ -1,0 +1,37 @@
+{
+  "model_name": "swin_t",
+  "attention": "none",
+  "pretrained": true,
+  "best_val_acc": 94.50980392156863,
+  "test_acc": 92.24264107985039,
+  "test_loss": 0.28519428198434504,
+  "hyperparameters": {
+    "model": "swin_t",
+    "data_dir": "./data",
+    "epochs": 30,
+    "batch_size": 32,
+    "num_workers": 0,
+    "optimizer": "adamw",
+    "weight_decay": 0.0001,
+    "device": "mps",
+    "seed": 42,
+    "output_dir": "/Users/football_prince/Desktop/2 研究生/1 课程文件/深度学习与空间智能/hw2/outputs/task4_swin_t",
+    "overwrite": false,
+    "download": false,
+    "color_jitter": true,
+    "momentum": 0.9,
+    "attention": "none",
+    "pretrained": true,
+    "backbone_lr": 0.0001,
+    "classifier_lr": 0.001,
+    "lr": 0.0001,
+    "task": "task4_attention",
+    "num_classes": 102,
+    "pretrained_load_info": {
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "missing_count": 0,
+      "unexpected_count": 0
+    }
+  }
+}

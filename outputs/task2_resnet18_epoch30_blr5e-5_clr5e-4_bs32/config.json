@@ -1,0 +1,28 @@
+{
+  "model": "resnet18",
+  "data_dir": "./data",
+  "epochs": 30,
+  "batch_size": 32,
+  "num_workers": 0,
+  "optimizer": "adamw",
+  "weight_decay": 0.0001,
+  "device": "mps",
+  "seed": 42,
+  "output_dir": "/Users/football_prince/Desktop/2 研究生/1 课程文件/深度学习与空间智能/hw2/outputs/task2_resnet18_epoch30_blr5e-5_clr5e-4_bs32",
+  "overwrite": false,
+  "download": false,
+  "color_jitter": true,
+  "momentum": 0.9,
+  "backbone_lr": 5e-05,
+  "classifier_lr": 0.0005,
+  "task": "task2_hparam",
+  "pretrained": true,
+  "attention": "none",
+  "num_classes": 102,
+  "pretrained_load_info": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "missing_count": 0,
+    "unexpected_count": 0
+  }
+}

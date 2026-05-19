@@ -1,0 +1,11 @@
+任务 1：微调在 ImageNet 上预训练的卷积神经网络实现宠物识别
+
+基本要求：
+
+（1）数据集与 Baseline：在 102 Category Flower Dataset 数据集上，修改现有的 CNN 架构（ResNet-18 或 ResNet-34）的输出层作为 Baseline 进行训练和测试，训练时使用在 ImageNet 上预训练得到的网络参数进行初始化，从零开始训练新的输出层，并对其余参数使用较小的学习率进行微调；
+
+（2）超参数分析：观察不同的超参数，如训练步数、学习率，及其不同组合带来的影响，并尽可能提升模型性能；
+
+（3）预训练消融实验：与仅使用 102 Category Flower Dataset 数据集从随机初始化的网络参数开始训练得到的结果进行对比，观察预训练带来的提升；
+
+（4）引入注意力机制：在 Baseline 模型的基础上，手动修改网络结构，加入注意力模块（如 SE-block、CBAM），或者直接使用轻量级的 Vision Transformer（如 ViT-Tiny，Swin-T），进行训练并与 Baseline 对比模型性能（Accuracy）。

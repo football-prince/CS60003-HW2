@@ -1,0 +1,46 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Dataset files
+data/
+
+# Model checkpoints and large training artifacts
+*.pth
+*.pt
+*.ckpt
+
+# Keep lightweight experiment summaries, logs, configs, and figures if desired,
+# but never commit trained weights.
+outputs/**/*.pth
+outputs/**/*.pt
+outputs/**/*.ckpt
+
+# LaTeX build intermediates
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# Matplotlib/font caches
+.matplotlib/
+.cache/
+
+# Misc generated output folders
+out/
+
+# Archives
+*.zip

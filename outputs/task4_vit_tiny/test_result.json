@@ -1,0 +1,37 @@
+{
+  "model_name": "vit_tiny",
+  "attention": "none",
+  "pretrained": true,
+  "best_val_acc": 91.27450980392157,
+  "test_acc": 87.57521548219222,
+  "test_loss": 0.4782285780065364,
+  "hyperparameters": {
+    "model": "vit_tiny",
+    "data_dir": "./data",
+    "epochs": 30,
+    "batch_size": 8,
+    "num_workers": 0,
+    "optimizer": "adamw",
+    "weight_decay": 0.0001,
+    "device": "mps",
+    "seed": 42,
+    "output_dir": "/Users/football_prince/Desktop/2 研究生/1 课程文件/深度学习与空间智能/hw2/outputs/task4_vit_tiny",
+    "overwrite": false,
+    "download": false,
+    "color_jitter": true,
+    "momentum": 0.9,
+    "attention": "none",
+    "pretrained": true,
+    "backbone_lr": 0.0001,
+    "classifier_lr": 0.001,
+    "lr": 0.0001,
+    "task": "task4_attention",
+    "num_classes": 102,
+    "pretrained_load_info": {
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "missing_count": 0,
+      "unexpected_count": 0
+    }
+  }
+}

@@ -1,0 +1,34 @@
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llllrrrrrrrl}
+\toprule
+Task & Model & Attn & Init & Epochs & BS & BB LR & Cls LR & LR & Best Val & Test & Folder \\
+\midrule
+task1\_baseline & resnet18 & none & pretrained & 30 & 32 & 1e-4 & 1e-3 & -- & 92.16 & 89.85 & task1\_resnet18 \\
+task1\_baseline & resnet34 & none & pretrained & 30 & 32 & 1e-4 & 1e-3 & -- & 91.76 & 89.64 & task1\_resnet34 \\
+task2\_hparam & resnet18 & none & pretrained & 10 & 32 & 1e-4 & 1e-3 & -- & 91.18 & 89.19 & task2\_resnet18\_epoch10\_blr1e-4\_clr1e-3\_bs32 \\
+task2\_hparam & resnet18 & none & pretrained & 30 & 16 & 1e-4 & 1e-3 & -- & 91.76 & 87.40 & task2\_resnet18\_epoch30\_blr1e-4\_clr1e-3\_bs16 \\
+task2\_hparam & resnet18 & none & pretrained & 30 & 32 & 1e-5 & 1e-4 & -- & 89.22 & 85.59 & task2\_resnet18\_epoch30\_blr1e-5\_clr1e-4\_bs32 \\
+task2\_hparam & resnet18 & none & pretrained & 30 & 32 & 5e-5 & 5e-4 & -- & 94.12 & 90.62 & task2\_resnet18\_epoch30\_blr5e-5\_clr5e-4\_bs32 \\
+task2\_hparam & resnet18 & none & pretrained & 30 & 32 & 1e-4 & 1e-3 & -- & 92.16 & 89.85 & task2\_resnet18\_epoch30\_blr1e-4\_clr1e-3\_bs32 \\
+task2\_hparam & resnet18 & none & pretrained & 30 & 32 & 2e-4 & 2e-3 & -- & 89.31 & 85.64 & task2\_resnet18\_epoch30\_blr2e-4\_clr2e-3\_bs32 \\
+task2\_hparam & resnet18 & none & pretrained & 50 & 32 & 1e-4 & 1e-3 & -- & 92.25 & 89.74 & task2\_resnet18\_epoch50\_blr1e-4\_clr1e-3\_bs32 \\
+task2\_hparam & resnet34 & none & pretrained & 10 & 32 & 1e-4 & 1e-3 & -- & 91.76 & 89.64 & task2\_resnet34\_epoch10\_blr1e-4\_clr1e-3\_bs32 \\
+task2\_hparam & resnet34 & none & pretrained & 30 & 16 & 1e-4 & 1e-3 & -- & 91.18 & 88.78 & task2\_resnet34\_epoch30\_blr1e-4\_clr1e-3\_bs16 \\
+task2\_hparam & resnet34 & none & pretrained & 30 & 32 & 1e-5 & 1e-4 & -- & 90.98 & 88.06 & task2\_resnet34\_epoch30\_blr1e-5\_clr1e-4\_bs32 \\
+task2\_hparam & resnet34 & none & pretrained & 30 & 32 & 5e-5 & 5e-4 & -- & 93.53 & 91.59 & task2\_resnet34\_epoch30\_blr5e-5\_clr5e-4\_bs32 \\
+task2\_hparam & resnet34 & none & pretrained & 30 & 32 & 1e-4 & 1e-3 & -- & 91.76 & 89.64 & task2\_resnet34\_epoch30\_blr1e-4\_clr1e-3\_bs32 \\
+task2\_hparam & resnet34 & none & pretrained & 30 & 32 & 2e-4 & 2e-3 & -- & 87.84 & 85.85 & task2\_resnet34\_epoch30\_blr2e-4\_clr2e-3\_bs32 \\
+task2\_hparam & resnet34 & none & pretrained & 50 & 32 & 1e-4 & 1e-3 & -- & 91.76 & 89.64 & task2\_resnet34\_epoch50\_blr1e-4\_clr1e-3\_bs32 \\
+task3\_ablation & resnet18 & none & pretrained & 30 & 32 & 1e-4 & 1e-3 & -- & 92.16 & 89.85 & task3\_resnet18\_pretrained \\
+task3\_ablation & resnet18 & none & scratch & 30 & 32 & 1e-3 & 1e-3 & -- & 32.16 & 28.41 & task3\_resnet18\_scratch \\
+task3\_ablation & resnet34 & none & pretrained & 30 & 32 & 1e-4 & 1e-3 & -- & 91.76 & 89.64 & task3\_resnet34\_pretrained \\
+task3\_ablation & resnet34 & none & scratch & 30 & 32 & 1e-3 & 1e-3 & -- & 25.98 & 21.01 & task3\_resnet34\_scratch \\
+task4\_attention & resnet18 & cbam & pretrained & 30 & 32 & 1e-4 & 1e-3 & 1e-4 & 85.29 & 81.36 & task4\_resnet18\_cbam \\
+task4\_attention & resnet18 & se & pretrained & 30 & 32 & 1e-4 & 1e-3 & 1e-4 & 90.78 & 87.87 & task4\_resnet18\_se \\
+task4\_attention & resnet34 & cbam & pretrained & 30 & 32 & 1e-4 & 1e-3 & 1e-4 & 88.24 & 83.77 & task4\_resnet34\_cbam \\
+task4\_attention & resnet34 & se & pretrained & 30 & 32 & 1e-4 & 1e-3 & 1e-4 & 90.20 & 87.23 & task4\_resnet34\_se \\
+task4\_attention & vit\_tiny & none & pretrained & 30 & 8 & 1e-4 & 1e-3 & 1e-4 & 91.27 & 87.58 & task4\_vit\_tiny \\
+task4\_attention & swin\_t & none & pretrained & 30 & 32 & 1e-4 & 1e-3 & 1e-4 & 94.51 & 92.24 & task4\_swin\_t \\
+\bottomrule
+\end{tabular}
+}%
